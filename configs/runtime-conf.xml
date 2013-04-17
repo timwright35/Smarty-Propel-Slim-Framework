@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <propel>
+        <datasources default="sitename">
+            <datasource id="sitename">
+                <adapter>mysql</adapter> <!-- sqlite, mysql, mssql, oracle, or pgsql -->
+                <connection>
+                    <dsn>mysql:host=[host];dbname=[dbname]</dsn>
+                    <user>[user]</user>
+                    <password>[password]</password>
+                </connection>
+            </datasource>
+        </datasources>
+    </propel>
+</config>

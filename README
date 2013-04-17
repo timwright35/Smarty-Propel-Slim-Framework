@@ -1,0 +1,27 @@
+To Install:
+1) Run composer install
+2) Move Smarty.php from extras folder to vendor\slim\extras\slim\extras\views
+
+Under Configs
+3) Change build.properties, buildtime-conf, and runtime-conf with database info
+4) Change smarty/application.conf with project info
+5) Change config.inc.php with project info
+
+Under DB
+6) Fill out schema.xml, sample of user provided
+
+7) Run vendor/bin/propel-gen configs convert-conf
+8) Run vendor/bin/propel-gen configs diff
+9) Run vendor/bin/propel-gen configs migrate
+10) Run vendor/bin/propel-gen configs om
+
+To make a site:
+-Add to schema and generate modals
+-Add routes to controllers/index.php, sample given
+-Add controllers to controllers/, samples given
+-Add views to templates, samples given
+
+Enjoy
+
+P.S. Possible extensions, add Bootstrap.js and Bootstrap.css to the js and css folders, then call both in a template file.
+Suggestion, make a layout.tpl under apps and extend it in other tpls
