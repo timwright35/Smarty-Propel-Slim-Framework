@@ -12,6 +12,8 @@ $app = new \Slim\Slim(array(
 	'debug' => true
 ));
 
+//TODO: Make function to serach for controllers without require once
+
 $app->get('/', function() use ($app){
 	require_once(BASE_DIR . '/controllers/main.php');
 	

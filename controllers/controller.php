@@ -2,29 +2,48 @@
 
 class controller {
 
-	private static $view = null;
-	private static $vars = array();
+	private static $view;
+	private static $vars;
 
-	function __construct(){}
+	function __construct(){
+		$this->view = null;
+		$this->vars = array();
+	}
 	
 	public function getView(){
-		return $this->view;
+		return $this->view . "," . $this->vars;
 	}
 	
 	public function setView($view){
 		$this->view = $view;
 	}
 	
-	public function setVars($vars){
-		$this->vars = $vars;
-	}
-	
-	public function addVar($var){
-		$this->vars[] = $var;
+	public function addVar($key,$val){
+		$this->vars[$key] = $val;
 	}
 	
 	public function getVar($key){
 		return $this->vars[$key];
+	}
+	
+	public function processPost($post){
+	
+	}
+	
+	public function processGet($get){
+	
+	}
+	
+	public function processPut($put){
+	
+	}
+	
+	public function processDelete($delete){
+	
+	}
+	
+	public function processOptions($options){
+	
 	}
 	
 }

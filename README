@@ -22,6 +22,3 @@ To make a site:
 -Add views to templates, samples given
 
 Enjoy
-
-P.S. Possible extensions, add Bootstrap.js and Bootstrap.css to the js and css folders, then call both in a template file.
-Suggestion, make a layout.tpl under apps and extend it in other tpls
