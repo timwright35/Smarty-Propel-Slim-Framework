@@ -1,7 +1,7 @@
 {
     "require": {
-        "twitter/bootstrap": "dev-master",
-        "propel/propel1": "1.6.8",
+        "twitter/bootstrap": "v2.3.1",
+        "propel/propel1": "1.6.9",
         "smarty/smarty": "~3",
 		"slim/slim": "2.2.0",
 		"slim/extras": "2.0.3"
